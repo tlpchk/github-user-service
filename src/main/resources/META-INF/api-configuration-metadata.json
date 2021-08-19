@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "api.users",
+      "type": "java.lang.String",
+      "description": "Base URL to external users API"
+    }
+  ]
+}
