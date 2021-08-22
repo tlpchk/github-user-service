@@ -19,13 +19,13 @@ public class LoginCounterController {
     private final LoginCounterRepository loginCounterRepository;
 
     @GetMapping("/")
-    public List<LoginCounter> getAllCounts(){
+    public List<LoginCounter> getAllCounts() {
         return loginCounterRepository.findAll();
     }
 
     @GetMapping("/{login}")
-    public LoginCounter getLoginCounter(@PathVariable String login){
+    public LoginCounter getLoginCounter(@PathVariable String login) {
         return loginCounterRepository.findById(login)
-                .orElseThrow(() -> new LoginCounterNotFoundException( login));
+                .orElseThrow(() -> new LoginCounterNotFoundException(login));
     }
 }
