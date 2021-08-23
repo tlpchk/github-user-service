@@ -1,7 +1,7 @@
-package com.empik.recruitment.homework.model.mapper;
+package com.simple.rest.app.model.mapper;
 
-import com.empik.recruitment.homework.model.User;
-import com.empik.recruitment.homework.model.UserDTO;
+import com.simple.rest.app.model.User;
+import com.simple.rest.app.model.UserDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

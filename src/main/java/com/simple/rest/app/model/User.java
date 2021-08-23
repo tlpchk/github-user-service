@@ -1,4 +1,4 @@
-package com.empik.recruitment.homework.model;
+package com.simple.rest.app.model;
 
 import lombok.Data;
 

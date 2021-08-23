@@ -1,6 +1,6 @@
-package com.empik.recruitment.homework.service.calculations;
+package com.simple.rest.app.service.calculations;
 
-import com.empik.recruitment.homework.model.UserDTO;
+import com.simple.rest.app.model.UserDTO;
 import org.springframework.stereotype.Component;
 
 @Component(value = "userCalculationServiceImpl")

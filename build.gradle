@@ -4,8 +4,8 @@ plugins {
     id 'java'
 }
 
-group = 'com.empik.recruitment'
-version = '0.0.1-SNAPSHOT'
+group = 'com.simple.rest.app'
+version = '1.0.0'
 sourceCompatibility = '11'
 
 configurations {
@@ -26,6 +26,8 @@ dependencies {
 
     // Tests
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'junit:junit:4.13'
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.7.0"
 
     // Database
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
@@ -36,7 +38,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 
     // MapStruct
-    compileOnly 'org.mapstruct:mapstruct:1.4.2.Final'
+    implementation 'org.mapstruct:mapstruct:1.4.2.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
 }
 

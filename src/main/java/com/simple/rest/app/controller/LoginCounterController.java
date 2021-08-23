@@ -1,8 +1,7 @@
-package com.empik.recruitment.homework.controller;
+package com.simple.rest.app.controller;
 
-import com.empik.recruitment.homework.exception.LoginCounterNotFoundException;
-import com.empik.recruitment.homework.model.LoginCounter;
-import com.empik.recruitment.homework.repository.LoginCounterRepository;
+import com.simple.rest.app.model.LoginCounter;
+import com.simple.rest.app.service.rest.LoginCounterService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,16 +15,15 @@ import java.util.List;
 @RequestMapping("/counter")
 public class LoginCounterController {
 
-    private final LoginCounterRepository loginCounterRepository;
+    private final LoginCounterService loginCounterService;
 
     @GetMapping("/")
     public List<LoginCounter> getAllCounts() {
-        return loginCounterRepository.findAll();
+        return loginCounterService.findAll();
     }
 
     @GetMapping("/{login}")
     public LoginCounter getLoginCounter(@PathVariable String login) {
-        return loginCounterRepository.findById(login)
-                .orElseThrow(() -> new LoginCounterNotFoundException(login));
+        return loginCounterService.findById(login);
     }
 }

@@ -1,4 +1,4 @@
-package com.empik.recruitment.homework.config;
+package com.simple.rest.app.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;

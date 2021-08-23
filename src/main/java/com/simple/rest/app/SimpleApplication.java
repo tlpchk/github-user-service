@@ -1,13 +1,13 @@
-package com.empik.recruitment.homework;
+package com.simple.rest.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HomeworkApplication {
+public class SimpleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HomeworkApplication.class, args);
+        SpringApplication.run(SimpleApplication.class, args);
     }
 
 }

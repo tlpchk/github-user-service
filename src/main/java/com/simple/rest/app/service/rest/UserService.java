@@ -1,10 +1,10 @@
-package com.empik.recruitment.homework.service.rest;
+package com.simple.rest.app.service.rest;
 
-import com.empik.recruitment.homework.model.mapper.UserMapper;
-import com.empik.recruitment.homework.exception.UserNotFoundException;
-import com.empik.recruitment.homework.model.User;
-import com.empik.recruitment.homework.model.UserDTO;
-import com.empik.recruitment.homework.service.calculations.UserCalculationsService;
+import com.simple.rest.app.exception.UserNotFoundException;
+import com.simple.rest.app.model.User;
+import com.simple.rest.app.model.UserDTO;
+import com.simple.rest.app.model.mapper.UserMapper;
+import com.simple.rest.app.service.calculations.UserCalculationsService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;

@@ -1,4 +1,4 @@
-package com.empik.recruitment.homework.exception;
+package com.simple.rest.app.exception;
 
 public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException(String login) {

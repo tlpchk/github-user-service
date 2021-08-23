@@ -1,8 +1,8 @@
-package com.empik.recruitment.homework.controller;
+package com.simple.rest.app.controller;
 
-import com.empik.recruitment.homework.model.User;
-import com.empik.recruitment.homework.service.rest.LoginCounterService;
-import com.empik.recruitment.homework.service.rest.UserService;
+import com.simple.rest.app.model.User;
+import com.simple.rest.app.service.rest.LoginCounterService;
+import com.simple.rest.app.service.rest.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

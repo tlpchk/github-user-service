@@ -1,4 +1,4 @@
-package com.empik.recruitment.homework.exception;
+package com.simple.rest.app.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
